@@ -1,0 +1,471 @@
+/*
+Theme Name: HSX
+Theme URI: http://hsx-programs.com
+Author: Healthy Selfie
+Author URI: http://healthyselfieapp.com
+Description: A website for personal trainers to sell their programmes and nutritional guides.
+Version: 1.0
+Text Domain: hsx-programs
+*/
+
+
+/* ====== Global ====== */
+body {
+	padding-top: 0px;
+	font-family: 'HelveticaNeue-Light', Helvetica, sans-serif, serif;
+}
+h1, h2, h3, h4, h5, h6, button, input {
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+}
+.no-bg {
+	background-color: #f1f1f1;
+}
+.bg {
+	background-color: #333333;
+}
+input {
+	background-color: transparent;
+	color: #000000;
+	border: #000000 solid 2px;
+	padding: 10px;
+}
+textarea:focus, input:focus{
+    outline: 0;
+}
+section {
+	border-top: 5px solid #333333;
+}
+a:hover {
+	text-decoration: none;
+}
+.body-top {
+	padding-top: 70px;
+}
+.wp-post-image {
+	margin-bottom: 20px;
+}
+
+/* ====== BUTTONS ====== */
+
+.btn-default {
+	padding: 5px 20px;
+	border: 2px solid #000000;
+	background-color: rgba(255,255,255,0.6);
+	border-radius: 0;
+	text-transform: uppercase;
+	-o-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-webkit-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+.btn-default:hover {
+	background-color: #000000;
+	border: solid #000000 2px;
+	color: #ffffff;
+}
+
+/* ===== Navbar ===== */
+.navbar-brand {
+	font-family: 'HelveticaNeue-UltraLight', helvetica, sans-serif, serif;
+	font-size: 25px;
+}
+.navbar-inverse .navbar-nav>li>a {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.navbar-inverse .navbar-nav>.active>a {
+	background-color: transparent;
+	border-bottom: 2px solid #ffffff;
+}
+.navbar-inverse .navbar-nav>.active>a:hover {
+	background-color: transparent;
+
+}
+.navbar-inverse .navbar-brand {
+	color: #ffffff;
+}
+.navbar-inverse .navbar-brand:hover {
+	color: #9d9d9d;
+	-o-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-webkit-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+.navbar-inverse {
+	border: none;
+	padding: 20px 0;
+}
+.navbar-fixed-top {}
+
+.headhesive--clone {
+  position: fixed;                   /* fix the element */
+  top: 0;                            /* make sure it's at the top */
+  transform: translateY(-100%);      /* move it off screen */
+  transition: all 500ms ease-in-out; /* add animation */
+}
+.headhesive--stick {
+  transform: translateY(0%); /* move it back on screen */
+}
+.header-profile-pic {
+	max-width: 40px;
+}
+
+
+
+/* ===== PROFILE PAGE ===== */ 
+
+.profile {
+	background-size: cover;
+	border-bottom: 50px solid #333333;
+}
+.profile-pic {
+	max-width: 150px;
+	border: 5px solid #333333;
+}
+.profile h1 {
+	color: #ffffff;
+	font-weight: 300;
+}
+.profile-section {
+	padding: 50px 0;
+}
+.profile-section i{
+	-o-transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-ms-transition: all 1s;
+	transition: all 1s;
+}
+.profile-section i:hover{
+	color: #2cb5fc;
+}
+.profile h3 {
+	color: #ffffff;
+	font-weight: 100;
+}
+.profile-section span {
+	color: #ffffff;
+	font-weight: 500;
+}
+.gym-pic {
+	max-width: 60px;
+	border: 3px solid #f1f1f1;
+}
+.profile-overlay {
+	background: rgba(0,0,0,0.7);
+}
+.overlay {
+  position: relative;
+}
+
+.overlay:before{
+  position: absolute;
+  content:" ";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: none;
+}
+
+.overlay:before{
+  display: block;
+}
+
+.black:before {
+  background-color: rgba(0,0,0,0.5);
+}
+.row {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+/*===== ANIMATION =====*/
+.duration-3 {
+	animation-duration: 3s;
+	-o-animation-duration: 3s;
+	-moz-animation-duration: 3s;
+	-webkit-animation-duration: 3s;
+}
+.delay-1 {
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+}
+.delay-2 {
+	animation-delay: 2s;
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+	-o-animation-delay: 2s;
+}
+
+
+
+/* ==== PROGRAMS ===== */
+
+.programs {
+	margin-top: 30px;
+}
+
+.item { width: 25%; }
+.item.w2 { width: 50%; }
+
+.modal-content img {
+	max-width: 100%;
+}
+
+#Container .mix{
+    display: none;
+}
+
+#program-filters {
+	margin-bottom: 30px;
+}
+.btn.active:focus {
+	outline: none;
+	background: #000000;
+	color: #ffffff;
+}
+
+#program-filters .btn-default.active {
+		background: #000000;
+	color: #ffffff;
+	border: 2px solid #000000;
+}
+
+/* ===== GALLERY ===== */ 
+
+.gallery {
+	background-color: #333;
+	color: #ffffff;
+}
+.gallery-images {
+
+}
+.thumbnail {
+	background-color: transparent;
+	border: none;
+}
+.gallery .row .col-md-4{
+	padding: 0px;
+}
+.gallery-head {
+	padding-left: 15px;
+}
+.gallery ul li {
+	text-decoration: none;
+}
+
+/* ===== SUBSCRIBER ===== */
+.subscribe {
+	margin: 80px 0;
+}
+.subscribe h2 {
+	color: #ffffff;
+}
+.subscribe input {
+	color: #ffffff;
+	border-color: #ffffff;
+	letter-spacing: 2px;
+}
+
+/* ====== BLOG ======= */
+.blog img {
+	border: 5px solid #f1f1f1;
+}
+.blog h3 {
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+.blog hr {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.blog-body {
+	margin: 50px 0;
+}
+.blog {
+	padding: 50px 0;
+}
+.blog a {
+	color: #333;
+}
+.blog a:hover {
+	color: #0086cb;
+}
+.upw-posts article {
+	display: inline;
+}
+.excerpt {
+	font-family: 'HelveticaNeue-Light', Helvetica, sans-serif, serif;
+}
+
+/* ======= CONTACT FORM ======= */
+
+#contact {
+	background-image: url('../img/bg/contact-background.png');
+}
+
+.contact-form {
+	background-color: #ffffff;
+	text-transform: uppercase;
+	padding: 50px 100px;
+	border: 2px solid #000000;
+	margin: 50px 50px 50px 50px;
+}
+.contact-form input, .contact-form textarea{
+	border: 2px solid #000000;
+	border-radius: 0;
+	margin-bottom: 25px;
+	padding: 20px;
+	width: 100%;
+}
+.contact-top-text {
+	margin-bottom: 50px;
+}
+.contact-top-text h3 {
+	font-size: 25px;
+}
+#contactForm {
+	padding: 50px 0;
+}
+
+/* ========= SINGLE ========= */
+
+.single {
+	margin: 50px;
+}
+.comments input {
+	color: #000000;
+	width: 100%;
+	margin-bottom: 18px;
+	padding: 15px 5px;
+}
+.comments input:focus {
+	background-color: #ffffff;
+}
+
+.comments textarea {
+	width: 100%;
+	margin-bottom: 18px;
+	padding: 15px 5px;
+	background-color: transparent;
+}
+
+#comments .comment-side img {
+width: 80px;
+height: 80px;
+border-radius: 80px;
+display: inline-block;
+}
+
+.reply {
+
+	margin-top: 30px;
+}
+.commentlist {
+	padding: 30px 0;
+}
+
+.back-to-blog-btn {
+	margin-top: 20px;
+}
+
+.media {
+	padding: 8px 0;
+}
+.media-body p {
+	border-bottom: 1px solid #b0b0b0;
+	padding-bottom: 0px;
+}
+.media-body span {
+	font-size: 12px;
+}
+.posts {
+	margin-bottom: 50px;
+	padding-bottom: 10px;
+}
+.posts img {
+	margin: 15px 0;
+}
+
+/*.blog {
+	margin: 50px 0;
+}*/
+
+/* ===== SINGLE ==== */
+.single-body {
+	margin-bottom: 50px;
+	border-bottom: 2px dotted #929292;
+	padding-bottom: 50px;
+}
+.alignleft {
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
+.alignright {
+	float: right;
+	margin-left: 30px;
+	margin-bottom: 30px;
+}
+.aligncenter {
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.about-post {
+	color: #929292;
+}
+.about-post a {
+	color: #929292;
+}
+.about-post a:hover {
+	color: #0057a5;
+}
+.blog .about-post img {
+	border: none;
+}
+.blog-single {
+	margin: 50px 0;
+}
+
+
+/* ===== FOOTER ===== */
+
+.footer img {
+	max-width: 30px;
+	margin-bottom: 10px;
+}
+.footer {
+	margin: 20px 0 0 0 ;
+	background-color: #f1f1f1;
+	padding-top: 30px;
+}
+
+/* ==== WOOCOMMERCE ==== */
+.button {
+	margin:0px;
+}
+.add_to_cart_button {
+	margin-top: 25px;
+	text-transform: uppercase;
+}
+ul.products {
+	padding: 0px;
+}
+.attachment-shop_catalog {
+	width: 100%;
+}
+
+
+
+
+
+
